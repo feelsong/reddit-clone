@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @event.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @event.description %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @event.date %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @event.rating %>
+</p>
+
+<td><%=link_to image_tag('thumbs_up', :border => 0), vote_for_event_events_path(@event), :remote => true %></td>
+<td><%=link_to image_tag('thumbs_down', :border => 0), vote_against_event_events_path(@event), :remote => true %></td>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
