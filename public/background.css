@@ -1,0 +1,7 @@
+div
+{
+background:url(Users/tjbenneche/reddit-clone/reddit/liferaver_bg.jpg);
+-moz-background-size:100% 100%; /* Firefox 3.6 */
+background-size:100% 100%;
+background-repeat:no-repeat;
+}
